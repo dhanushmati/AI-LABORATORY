@@ -7,12 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class AstarSearchAlgo{
-
-
-        //h scores is the stright-line distance from the current city to Bucharest
-        public static void main(String[] args){
-
-                //initialize the graph base on the Romania map
+           public static void main(String[] args){              
                 Node n1 = new Node("Arad",366);
                 Node n2 = new Node("Zerind",374);
                 Node n3 = new Node("Oradea",380);
@@ -26,11 +21,9 @@ public class AstarSearchAlgo{
                 Node n11 = new Node("Drobeta",242);
                 Node n12 = new Node("Craiova",160);
                 Node n13 = new Node("Bucharest",0);
-                        Node n14 = new Node("Giurgiu",77);
- 
-                //initialize the edges
+                Node n14 = new Node("Giurgiu",77);
 
-                //Arad
+            
                 n1.adjacencies = new Edge[]{
                         new Edge(n2,75),
                         new Edge(n4,140),
